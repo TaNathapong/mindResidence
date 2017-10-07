@@ -1,11 +1,19 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title style="text-align: center;">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
+    <ion-item>
+      <ion-avatar style="height : 70px; width : 70px;"item-start>
+        <img style="height : 70px; width : 70px;" src="img/avatar.jpg">
+      </ion-avatar>
+      <h2>ประหยัด จันดารา</h2>
+      <p>ห้อง 704</p>
+      <p>โครงการ 2</p>
+    </ion-item>
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
