@@ -1,26 +1,24 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title style="text-align: center;">Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content>
-    <ion-item>
-      <ion-avatar style="height : 70px; width : 70px;"item-start>
-        <img style="height : 70px; width : 70px;" src="img/avatar.jpg">
-      </ion-avatar>
-      <h2>ประหยัด จันดารา</h2>
-      <p>ห้อง 704</p>
-      <p>โครงการ 2</p>
-    </ion-item>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
+    <ion-content class="custom">
+        <ion-item class="head">
+            <ion-avatar item-start>
+                <img style=" border: 4px solid #fff; height : 80px; width : 80px;" src="img/avatar.jpg">
+            </ion-avatar>
+            <h2>ประหยัด จันดารา</h2>
+            <h3>ห้อง 704</h3>
+            <h3>โครงการ 2</h3>
+        </ion-item>
+        <ion-list>
+            <button class="button" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                {{p.title}}
+            </button>
+            <ion-footer>
+                <button class="logout" menuClose>
+                    <p>ออกจากระบบ</p>
+                </button>
+            </ion-footer>
+        </ion-list>
+    </ion-content>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

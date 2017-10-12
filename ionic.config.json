@@ -1,6 +1,8 @@
 {
   "name": "mindRes",
-  "app_id": "",
+  "app_id": "3c2d6868",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
